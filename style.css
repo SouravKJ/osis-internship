@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(14, 5, 65);
+    color: aliceblue;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    font-size: 40px
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display: grid;
+    gap: 60px;
+}
+.mainbox{
+    border: 2px solid gray;
+    padding: 50px;
+    display: grid;
+    gap: 20px;
+    position: relative;
+    background-color: transparent;
+    background-color: rgba(180, 190, 194, 0.1);
+    border-radius: 20px;
+
+}
+.converter{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 900;
+    z-index: 10;
+    position: relative;
+}
+.temp1{
+    display: flex;
+    column-gap: 50px;
+}
+.to{
+    margin-top:20px ;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+.display{
+    height: 100px;
+    border: 2px solid gray;
+    margin-top:20px ;
+    margin-bottom: 20px;
+    font-size: 50px;
+    text-align:end;
+    padding: 20px;
+}
+
+input[type=number   ] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid gray;
+    background-color: rgb(14, 5, 65) ;
+    color: aliceblue;
+  }
+  select[name=type]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid gray;
+    background-color: rgb(14, 5, 65) ;
+    color: aliceblue;
+  }
+  select[name=type1]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid gray;
+    background-color: rgb(14, 5, 65) ;
+    color: aliceblue;
+  }
+  label{
+    font-size: 20px;
+  }
+  .convert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button{
+    padding: 15px;
+    width: 200px;
+    border-radius: 100px;
+    font-size: x-large;
+    background-color: rgb(6, 6, 69);
+    color: white;
+    box-shadow: 2px 2px lightblue
+  }
+  footer{
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+  }
+  .bxl-github{
+    color: rgb(105, 103, 103);
+  }
+  .bxl-linkedin-square{
+    color: rgb(43, 43, 230);
+  }
+  .bxl-instagram-alt{
+    color: rgb(231, 12, 206);
+  }
+  /* @media quary for tablets */
+  @media only screen and (max-width: 768px) {
+    header {
+        font-size: 30px;
+    }
+    .mainbox {
+        padding: 30px;
+        gap: 30px;
+    }
+    .temp1 {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .display {
+        font-size: 40px;
+        height: 80px;
+    }
+    button {
+        width: 180px;
+        font-size: large;
+    }
+    .converter {
+        font-size: x-large;
+    }
+}
+/* @media quary for mobile */
+@media only screen and (max-width: 480px) {
+    header {
+        font-size: 24px;
+    }
+    .mainbox {
+        padding: 20px;
+        gap: 20px;
+    }
+    .temp1 {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .display {
+        font-size: 30px;
+        height: 60px;
+        padding: 10px;
+    }
+    button {
+        width: 150px;
+        font-size: medium;
+        padding: 10px;
+    }
+    .converter {
+        font-size: large;
+    }
+}

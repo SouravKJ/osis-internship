@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temprature converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <h1>Converter</h1>
+        </header>
+        <main>
+            <div class="mainbox">
+                <div class="converter">TempratureConverter</div>
+                <div class="type">
+                    <div class="temp1">
+                        <div class="flex">
+                            <div class="label1"><label>Degree</label></div>
+                            <div class="temp">
+                                <input type="number" placeholder="enter your temprature" class="degree" required>
+                            </div>
+                        </div>
+                        <div class="type1">
+                            <div class="label2"><label>Type</label></div>
+                            <div class="temptype">
+                                <select name="type" class="cel">
+                                    <option value="enter your type">Enter your type</option>
+                                    <option value="celsius">Celsius</option>
+                                    <option value="fahrenhit">Fahrenhit</option>
+                                    <option value="kelvin">Kelvin</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="to">
+                        <div class="label2"><label>Type</label></div>
+                        <select name="type1" class="cel1">
+                            <option value="enter your type">Enter your type</option>
+                            <option value="celsius">Celsius</option>
+                            <option value="fahrenhit">Fahrenhit</option>
+                            <option value="kelvin">Kelvin</option>
+                        </select>
+                    </div>
+                    <div class="display">
+                    <!-- <div class="display1"></div>
+                    <div class="display2"></div>
+                    <div class="display3"></div> -->
+                    </div>
+                        <div class="convert">
+                            <button onclick="convertTemp()">convert</button>
+                        </div>
+                </div>
+
+            </div>
+        </main>
+        <footer>
+          <a href="https://github.com/SouravKJ/"><i class='bx bxl-github'></i></a>  
+            <a href="https://www.linkedin.com/in/sourav-jha-9b303b254/"><i class='bx bxl-linkedin-square'></i></a>
+           <a href="https://www.instagram.com/souravjha2711/"> <i class='bx bxl-instagram-alt'></i></a>
+        </footer>
+
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
